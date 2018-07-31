@@ -12,18 +12,19 @@
 <body>
     <script>
         var t0 = performance.now();
-        window.onload = function () {
-            document.write('Now is ' + now() + '<br />');
-            document.write('Today is ' + timestamp() + '<br />');
-            var t1 = performance.now();
-            document.write("<br />--- Run in " + (t1 - t0) + " milliseconds. ---");
-        }
+        document.open();
+        document.write('Now is ' + now() + '<br />');
+        document.write('Today is ' + timestamp() + '<br />');
     </script>
-    <h5>Referências:</h5>
+    <h3>Referências:</h3>
     <ul>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/now" target="_blank">Mozilla.org: MDN Web Docs - performance.now()</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/write" target="_blank">Mozilla.org: MDN Web Docs - document.write()</a></li>
     </ul>
     <script>
+        var t1 = performance.now();
+        document.write("<br />--- Executado em " + (t1 - t0) + " milisegundos. ---");
+        document.close();
     </script>
     <!-- Custom JavaScript -->
     <script src="js/scripts.js"></script>
