@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+	<title> Title </title>
+</head>
+<body>
+    <script>
+        var t0 = performance.now();
+        window.onload = function () {
+            document.write('Now is ' + now() + '<br />');
+            document.write('Today is ' + timestamp() + '<br />');
+            var t1 = performance.now();
+            document.write("<br />--- Run in " + (t1 - t0) + " milliseconds. ---");
+        }
+    </script>
+    <h5>Referências:</h5>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/now" target="_blank">Mozilla.org: MDN Web Docs - performance.now()</a></li>
+    </ul>
+    <script>
+    </script>
+    <!-- Custom JavaScript -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
